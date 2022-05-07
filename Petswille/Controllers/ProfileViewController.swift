@@ -1,5 +1,5 @@
 //
-//  MapViewController.swift
+//  ProfileViewController.swift
 //  Petswille
 //
 //  Created by Игорь Тимофеев on 22.04.22.
@@ -7,13 +7,13 @@
 
 import UIKit
 
-class MapViewController: UIViewController {
+class ProfileViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController?.navigationBar.prefersLargeTitles = true
-        title = "dwwdwd"
-        view.backgroundColor = .green
+//        navigationController?.navigationBar.prefersLargeTitles = true
+//        title = "dwwdwd"
+//        view.backgroundColor = .blue
     }
     
 
