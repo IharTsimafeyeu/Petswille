@@ -1,5 +1,5 @@
 //
-//  CareViewController.swift
+//  MapViewController.swift
 //  Petswille
 //
 //  Created by Игорь Тимофеев on 22.04.22.
@@ -7,14 +7,13 @@
 
 import UIKit
 
-class CareViewController: UIViewController {
+class MapViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController?.navigationBar.prefersLargeTitles = true
-        title = "dwwdwd"
-
-        view.backgroundColor = .yellow
+//        navigationController?.navigationBar.prefersLargeTitles = true
+//        title = "dwwdwd"
+//        view.backgroundColor = .green
     }
     
 
