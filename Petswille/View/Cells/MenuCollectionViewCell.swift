@@ -4,8 +4,6 @@ final class MenuCollectionViewCell: UICollectionViewCell {
     
     static let identifier = "MenuCollectionViewCell"
     
-    
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
     }

@@ -74,6 +74,20 @@ extension ResizibleLayout {
     }
     
     override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
-        <#code#>
+        var resultAttributes = [UICollectionViewLayoutAttributes]()
+        
+        for attributes in cacheAttributes {
+            if attributes.frame.intersects(rect) {
+                resultAttributes.append(attributes)
+            }
+        }
+        return resultAttributes
+    }
+    
+    override func targetContentOffset(forProposedContentOffset proposedContentOffset: CGPoint) -> CGPoint {
+        let index = round(proposedContentOffset.y / dragOffset)
+        let y = index * dragOffset
+        
+        return CGPoint(x: 0, y: y)
     }
 }
